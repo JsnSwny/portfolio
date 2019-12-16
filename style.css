@@ -48,8 +48,7 @@ li {
 }
 
 li:hover {
-    background-color: rgba(5, 180, 238, 0.2);
-    color: black;
+    color: rgb(5, 180, 238);
 }
 
 .intro {
