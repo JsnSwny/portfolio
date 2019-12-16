@@ -328,11 +328,12 @@ footer a {
         font-size: 32px;
     }
     .intro-image img {
-        width: 280px;
+        width: 60vw;
         margin-top: 20px;
     }
     .intro p {
         font-size: 14px;
+        bottom: 30px;
     }
     li {
         font-size: 16px;
