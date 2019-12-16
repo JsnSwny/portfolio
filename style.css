@@ -313,8 +313,14 @@ footer a {
 
 
 @media only screen and (max-width: 1280px) {
+    .intro-text {
+        font-size: 40px;
+    }
     .intro-image img {
-        width: 40vw;
+        width: 35vw;
+    }
+    .intro p {
+        font-size: 14px;
     }
     section .about {
         width: 80%;
@@ -336,7 +342,6 @@ footer a {
     }
     .intro p {
         font-size: 14px;
-        bottom: 30px;
     }
     li {
         font-size: 16px;
