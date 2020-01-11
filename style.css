@@ -216,7 +216,7 @@ section > div > h1 {
 }
 
 .portfolio-item:nth-of-type(4) > .portfolio-image {
-    background-image: url("images/portfolio.jpg");
+    background-image: url("images/react-quiz.png");
 }
 
 .portfolio-image {
