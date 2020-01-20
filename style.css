@@ -216,6 +216,10 @@ section > div > h1 {
 }
 
 .portfolio-item:nth-of-type(4) > .portfolio-image {
+    background-image: url("images/restaurant-mock.jpg");
+}
+
+.portfolio-item:nth-of-type(5) > .portfolio-image {
     background-image: url("images/react-quiz.png");
 }
 
