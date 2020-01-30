@@ -208,18 +208,25 @@ section > div > h1 {
 }
 
 .portfolio-item:nth-of-type(2) > .portfolio-image {
-    background-image: url("images/montgomerie.jpg");
-}
-
-.portfolio-item:nth-of-type(3) > .portfolio-image {
-    background-image: url("images/barbers.jpg");
-}
-
-.portfolio-item:nth-of-type(4) > .portfolio-image {
     background-image: url("images/restaurant-mock.jpg");
 }
 
+/* .portfolio-item:nth-of-type(3) > .portfolio-image {
+    background-image: url("images/contact-form.jpg");
+} */
+.portfolio-item:nth-of-type(3) > .portfolio-image {
+    background-image: url("images/photographer.jpg");
+}
+
+.portfolio-item:nth-of-type(4) > .portfolio-image {
+    background-image: url("images/barbers.jpg");
+}
+
 .portfolio-item:nth-of-type(5) > .portfolio-image {
+    background-image: url("images/montgomerie.jpg");
+}
+
+.portfolio-item:nth-of-type(6) > .portfolio-image {
     background-image: url("images/react-quiz.png");
 }
 
