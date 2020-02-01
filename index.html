@@ -1,153 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Jason Sweeney</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript">
+      (function() {
+        var css = document.createElement("link");
+        css.href = "https://use.fontawesome.com/releases/v5.1.0/css/all.css";
+        css.rel = "stylesheet";
+        css.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(css);
+      })();
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
-    </script>
-</head>
-<body>
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <nav>
-        <div class="nav-links">
-            <ul>
-                <li class="unselectable" data-scroll="1">About</li>
-                <li class="unselectable" data-scroll="2">Portfolio</li>
-                <li class="unselectable" data-scroll="3">Contact</li>
-            </ul>
-        </div>
+      <div class="nav-links">
+        <ul>
+          <li class="unselectable" data-scroll="1">About</li>
+          <li class="unselectable" data-scroll="2">Portfolio</li>
+          <li class="unselectable" data-scroll="3">Contact</li>
+        </ul>
+      </div>
     </nav>
     <div class="intro">
-        <div class="intro-text">
-            Hi, I'm Jason<br>
-            I make websites.
-        </div>
-        <div class="intro-image">
-            <img src="images/me.jpg" class="unselectable">
-        </div>
-        <p>SCROLL DOWN TO FIND OUT MORE</p>
+      <div class="intro-text">
+        Hi, I'm Jason<br />
+        I make websites.
+      </div>
+      <div class="intro-image">
+        <img src="images/me.jpg" class="unselectable" />
+      </div>
+      <p>SCROLL DOWN TO FIND OUT MORE</p>
     </div>
 
     <section>
-        <div class="about">
-            <h1 data-aos="fade" data-aos-duration="800" data-aos-offset="100">About Me</h1>
-            <div class="about-content" data-aos="fade-up">
-                <p>My name is <span>Jason Sweeney</span>, I'm 20 years old</p>
-                <span><i class="fas fa-male fa-5x"></i></span>
-            </div>
-
-            <div class="about-content" data-aos="fade-up">
-                <p>I am in my 1st year of a degree in <span>Computer Science</span> at Heriot-Watt University in Edinburgh</p>
-                <span><i class="fas fa-graduation-cap fa-5x"></i></span>
-            </div>
-
-            <div class="about-content" data-aos="fade-up">
-                <p>Over the past two years I have self taught myself <span>Python, JavaScript, HTML5/CSS3, Django, React</span> and currently I am studying Java at Uni</p>
-                <span><i class="fas fa-keyboard fa-5x"></i></span>
-            </div>
-
-            <div class="about-content" data-aos="fade-up">
-                <p>Currently working part-time as a bartender in a night club</p>
-                <span><i class="fas fa-beer fa-5x"></i></span>
-            </div>
-
+      <div class="about">
+        <h1 data-aos="fade" data-aos-duration="800" data-aos-offset="100">
+          About Me
+        </h1>
+        <div class="about-content" data-aos="fade-up">
+          <p>My name is <span>Jason Sweeney</span>, I'm 20 years old</p>
+          <span><i class="fas fa-male fa-5x"></i></span>
         </div>
+
+        <div class="about-content" data-aos="fade-up">
+          <p>
+            I am in my 1st year of a degree in <span>Computer Science</span> at
+            Heriot-Watt University in Edinburgh
+          </p>
+          <span><i class="fas fa-graduation-cap fa-5x"></i></span>
+        </div>
+
+        <div class="about-content" data-aos="fade-up">
+          <p>
+            Over the past two years I have self taught myself
+            <span>Python, JavaScript, HTML5/CSS3, Django, React</span> and
+            currently I am studying Java at Uni
+          </p>
+          <span><i class="fas fa-keyboard fa-5x"></i></span>
+        </div>
+
+        <div class="about-content" data-aos="fade-up">
+          <p>Currently working part-time as a bartender in a night club</p>
+          <span><i class="fas fa-beer fa-5x"></i></span>
+        </div>
+      </div>
     </section>
 
     <section>
-        <div class="portfolio">
-            <h1 data-aos="fade" data-aos-duration="800" data-aos-offset="100">Portfolio</h1>
-            <div class="portfolio-container">
-                <div class="portfolio-item" data-aos="fade">
-                    <div class="portfolio-image">
-                    </div>
-                    <p><span>Reserve Table</span><br>Web application for managing restaurant tables and bookings</p>
-                    <a href="http://www.reservetable.co.uk" target="_blank" class="portfolio-btn">View</a>
-                </div>
-                <div class="portfolio-item" data-aos="fade">
-                    <div class="portfolio-image">
-                    </div>
-                    <p><span>Restaurant Mock</span><br>Mock-up for a professional restaurant website<br>Logo created using Adobe Illustrator</p>
-                    <a href="https://jsnswny.github.io/restaurant-mock/" target="_blank" class="portfolio-btn">View</a>
-                </div>
-                <!-- <div class="portfolio-item" data-aos="fade">
-                    <div class="portfolio-image">
-                    </div>
-                    <p><span>Contact Form Example</span><br>Colourful contact form example with options to change the colour theme.</p>
-                    <a href="https://contact-form-mock.netlify.com/" target="_blank" class="portfolio-btn">View</a>
-                </div> -->
-                <div class="portfolio-item" data-aos="fade">
-                    <div class="portfolio-image">
-                    </div>
-                    <p><span>Photographer Mock</span><br>Mock-up for a photographer home page</p>
-                    <a href="https://photographer-mock.netlify.com" target="_blank" class="portfolio-btn">View</a>
-                </div>
-                <div class="portfolio-item" data-aos="fade">
-                    <div class="portfolio-image">
-                    </div>
-                    <p><span>Barbers Mock</span><br>Mock-up for a barber shop website</p>
-                    <a href="https://jsnswny.github.io/barbers-mock/" target="_blank" class="portfolio-btn">View</a>
-                </div>
-                <div class="portfolio-item" data-aos="fade">
-                    <div class="portfolio-image">
-                    </div>
-                    <p><span>The Montgomerie Restaurant</span><br>One page website made for a golf club restaurant</p>
-                    <a href="http://www.themontgomerie.co.uk" target="_blank" class="portfolio-btn">View</a>
-                </div>
-                <div class="portfolio-item" data-aos="fade">
-                    <div class="portfolio-image">
-                    </div>
-                    <p><span>React Quiz</span><br>My first project using React and TailwindCSS. A simple quiz that allows the user to cycle back and forth between questions and update their answer.</p>
-                    <a href="https://jsnswny.github.io/react-quiz/" target="_blank" class="portfolio-btn">View</a>
-                </div>
-            </div>
-
+      <div class="portfolio">
+        <h1 data-aos="fade" data-aos-duration="800" data-aos-offset="100">
+          Portfolio
+        </h1>
+        <div class="portfolio-container">
+          <div class="portfolio-item" data-aos="fade">
+            <div class="portfolio-image"></div>
+            <p>
+              <span>Reserve Table</span><br />Web application for managing
+              restaurant tables and bookings
+            </p>
+            <a
+              href="http://www.reservetable.co.uk"
+              target="_blank"
+              class="portfolio-btn"
+              >View</a
+            >
+          </div>
+          <div class="portfolio-item" data-aos="fade">
+            <div class="portfolio-image"></div>
+            <p>
+              <span>Restaurant Mock</span><br />Mock-up for a professional
+              restaurant website<br />Logo created using Adobe Illustrator
+            </p>
+            <a
+              href="https://jsnswny.github.io/restaurant-mock/"
+              target="_blank"
+              class="portfolio-btn"
+              >View</a
+            >
+          </div>
+          <div class="portfolio-item" data-aos="fade">
+            <div class="portfolio-image"></div>
+            <p>
+              <span>Contact Form Example</span><br />Colourful contact form
+              example with form validation and colour theme options.
+            </p>
+            <a
+              href="https://contact-form-mock.netlify.com/"
+              target="_blank"
+              class="portfolio-btn"
+              >View</a
+            >
+          </div>
+          <div class="portfolio-item" data-aos="fade">
+            <div class="portfolio-image"></div>
+            <p>
+              <span>Photographer Mock</span><br />Mock-up for a photographer
+              home page
+            </p>
+            <a
+              href="https://photographer-mock.netlify.com"
+              target="_blank"
+              class="portfolio-btn"
+              >View</a
+            >
+          </div>
+          <div class="portfolio-item" data-aos="fade">
+            <div class="portfolio-image"></div>
+            <p>
+              <span>Barbers Mock</span><br />Mock-up for a barber shop website
+            </p>
+            <a
+              href="https://jsnswny.github.io/barbers-mock/"
+              target="_blank"
+              class="portfolio-btn"
+              >View</a
+            >
+          </div>
+          <div class="portfolio-item" data-aos="fade">
+            <div class="portfolio-image"></div>
+            <p>
+              <span>The Montgomerie Restaurant</span><br />One page website made
+              for a golf club restaurant
+            </p>
+            <a
+              href="http://www.themontgomerie.co.uk"
+              target="_blank"
+              class="portfolio-btn"
+              >View</a
+            >
+          </div>
+          <div class="portfolio-item" data-aos="fade">
+            <div class="portfolio-image"></div>
+            <p>
+              <span>React Quiz</span><br />My first project using React and
+              TailwindCSS. A simple quiz that allows the user to cycle back and
+              forth between questions and update their answer.
+            </p>
+            <a
+              href="https://jsnswny.github.io/react-quiz/"
+              target="_blank"
+              class="portfolio-btn"
+              >View</a
+            >
+          </div>
         </div>
+      </div>
     </section>
 
     <section>
-        <div class="contact section">
-            <h1>Contact Me</h1>
-            <p>I'm open to any project offers, send me an email if you're interested</p>
-            <div class="social-container">
-                <div class="social">
-                    <span><i class="fas fa-envelope fa-4x"></i></span>
-                    <a href="mailto:montrestaurant@gmail.com">jsnswny@gmail.com</a>
-                </div>
-                <div class="social">
-                    <span><i class="fab fa-github fa-4x"></i></span>
-                    <a href="https://github.com/JsnSwny">github.com/JsnSwny</a>
-                </div>
-            </div>
+      <div class="contact section">
+        <h1>Contact Me</h1>
+        <p>
+          I'm open to any project offers, send me an email if you're interested
+        </p>
+        <div class="social-container">
+          <div class="social">
+            <span><i class="fas fa-envelope fa-4x"></i></span>
+            <a href="mailto:montrestaurant@gmail.com">jsnswny@gmail.com</a>
+          </div>
+          <div class="social">
+            <span><i class="fab fa-github fa-4x"></i></span>
+            <a href="https://github.com/JsnSwny">github.com/JsnSwny</a>
+          </div>
         </div>
+      </div>
     </section>
     <footer>
-        <p>Site Designed by <a href="mailto:jsnswny@gmail.com">Jason Sweeney</a></p>
+      <p>
+        Site Designed by <a href="mailto:jsnswny@gmail.com">Jason Sweeney</a>
+      </p>
     </footer>
 
     <script>
-        AOS.init({
-            offset: 250,
-            duration: 1000
-        });
+      AOS.init({
+        offset: 250,
+        duration: 1000
+      });
 
-        function scrollTo(elem) {
-            $("html, body").animate({
-                scrollTop: $("body section:nth-of-type(" + elem + ")").offset().top - 50
-            }, 1000);
-        }
+      function scrollTo(elem) {
+        $("html, body").animate(
+          {
+            scrollTop:
+              $("body section:nth-of-type(" + elem + ")").offset().top - 50
+          },
+          1000
+        );
+      }
 
-        $( "li" ).click(function() {
-            scrollTo($(this).data('scroll'))
-        });
+      $("li").click(function() {
+        scrollTo($(this).data("scroll"));
+      });
     </script>
-</body>
+  </body>
 </html>
