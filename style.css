@@ -90,12 +90,14 @@ h2 {
 .hero__title {
 	font-size: 32px;
 	font-weight: 900;
+	opacity: 0;
 }
 
 .hero__subtitle {
 	font-size: 24px;
 	font-weight: 400;
 	margin-top: 1rem;
+	opacity: 0;
 }
 
 .hero__image {
@@ -104,6 +106,7 @@ h2 {
 	margin-top: 3rem;
 	width: 162px;
 	cursor: grab;
+	opacity: 0;
 }
 
 .hero__image:active {
@@ -125,7 +128,8 @@ h2 {
 	letter-spacing: 2px;
 	font-weight: 700;
 	margin-top: auto;
-	animation: fadeInOut 3s ease-in-out infinite;
+	/* animation: fadeInOut 3s ease-in-out infinite; */
+	opacity: 0;
 }
 
 .projects {
