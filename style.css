@@ -16,6 +16,7 @@ body {
 	background-color: #fcf9f5;
 	color: var(--colour-3);
 	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 a {
@@ -52,7 +53,10 @@ h2 {
 
 .hero.active {
 	min-height: auto;
-	padding-bottom: 10rem;
+}
+
+#projects-section {
+	padding-top: 6rem;
 }
 
 .hero.active .hero__bottom-text {
@@ -174,7 +178,7 @@ h2 {
 	font-weight: 400;
 }
 
-.section__about {
+.about-section {
 	/* background-color: var(--colour-2);
 	color: white; */
 	padding: 10rem 0;
@@ -259,7 +263,7 @@ h2 {
 } */
 
 .contact-section__image {
-	width: 350px;
+	width: 375px;
 	opacity: 0.3;
 }
 
@@ -269,10 +273,6 @@ h2 {
 	align-items: center;
 }
 
-.contact-section__wrapper > div {
-	/* flex: 1; */
-}
-
-/* .section {
+.section {
 	display: none;
-} */
+}
