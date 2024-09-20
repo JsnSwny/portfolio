@@ -24,7 +24,7 @@ emptySlot.addEventListener("drop", (e) => {
 	emptySlot.appendChild(draggedElement);
 	emptySlot.classList.remove("highlight");
 
-	emptySlot.src = "/assets/images/puzzle-of-me.png";
+	emptySlot.src = "assets/images/puzzle-of-me.png";
 
 	sections.forEach((section) => (section.style.display = "block"));
 	hero.classList.add("active");
