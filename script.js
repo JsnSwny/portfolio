@@ -1,5 +1,7 @@
 const dragPiece = document.getElementById("drag-piece");
 const emptySlot = document.getElementById("empty-slot");
+const sections = document.querySelectorAll(".section");
+const hero = document.getElementById("hero");
 
 dragPiece.addEventListener("dragstart", (e) => {
 	console.log("Drag started");
@@ -22,4 +24,7 @@ emptySlot.addEventListener("drop", (e) => {
 	emptySlot.classList.remove("highlight");
 
 	emptySlot.src = "/assets/images/puzzle-of-me.png";
+
+	sections.forEach((section) => (section.style.display = "block"));
+	hero.classList.add("active");
 });
