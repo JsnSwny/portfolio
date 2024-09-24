@@ -1,3 +1,5 @@
+const devMode = true;
+
 const dragPiece = document.getElementById("drag-piece");
 const emptySlot = document.getElementById("empty-slot");
 const sections = document.querySelectorAll(".section");
@@ -19,8 +21,11 @@ emptySlot.addEventListener("dragleave", () => {
 });
 
 emptySlot.addEventListener("drop", (e) => {
-	const piece = e.dataTransfer.getData("text");
-	const draggedElement = document.getElementById(piece);
+	initiate();
+});
+
+const initiate = () => {
+	const draggedElement = document.getElementById("drag-piece");
 	emptySlot.appendChild(draggedElement);
 	emptySlot.classList.remove("highlight");
 
@@ -143,12 +148,15 @@ emptySlot.addEventListener("drop", (e) => {
 			},
 		}
 	);
-});
+};
 
 document.addEventListener("DOMContentLoaded", () => {
 	gsap.registerPlugin(ScrollTrigger);
 	gsap.registerPlugin(ScrollToPlugin);
 
+	if (devMode) {
+		initiate();
+	}
 	// Hero Section Animation
 	gsap.fromTo(
 		".puzzle",
