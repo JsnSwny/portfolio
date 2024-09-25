@@ -60,26 +60,27 @@ const initiate = () => {
 		});
 	}, 500);
 
-	// Animate Projects Section
+	// Animate Projects Section - Each project fades in when it enters the viewport
 	const projects = gsap.utils.toArray(".project");
-	gsap.fromTo(
-		projects,
-		{
-			opacity: 0,
-			y: 20,
-		},
-		{
-			opacity: 1,
-			y: 0,
-			duration: 1,
-			ease: "power1.out",
-			stagger: 0.2,
-			scrollTrigger: {
-				trigger: ".projects",
-				start: "top 80%",
+	projects.forEach((project) => {
+		gsap.fromTo(
+			project,
+			{
+				opacity: 0,
+				y: 20,
 			},
-		}
-	);
+			{
+				opacity: 1,
+				y: 0,
+				duration: 1,
+				ease: "power1.out",
+				scrollTrigger: {
+					trigger: project,
+					start: "top 80%",
+				},
+			}
+		);
+	});
 
 	// Animate About Section
 	const aboutTitle = document.querySelector(".section__title");
