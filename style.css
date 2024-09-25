@@ -424,6 +424,9 @@ h2 {
 	.projects {
 		margin-top: 2rem;
 	}
+	.about-section__wrapper {
+		margin-top: 2rem;
+	}
 }
 
 @media (max-width: 480px) {
