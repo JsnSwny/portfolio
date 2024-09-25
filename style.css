@@ -24,6 +24,10 @@ a {
 	color: inherit;
 }
 
+p {
+	line-height: 160%;
+}
+
 h1,
 h2 {
 	font-family: "Boska-Bold";
@@ -37,11 +41,11 @@ h2 {
 }
 
 .nav {
-	height: 120px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+	padding: 1rem 0;
 }
 
 .hero {
@@ -80,7 +84,7 @@ h2 {
 
 .hero__content {
 	text-align: center;
-	max-width: 700px;
+	max-width: 500px;
 	width: 100%;
 	margin-top: 2rem;
 	flex: 1;
@@ -225,6 +229,7 @@ h2 {
 
 .project__description {
 	padding-top: 1rem;
+	color: #695e5e;
 }
 
 .section__title {
@@ -431,7 +436,7 @@ h2 {
 
 @media (max-width: 480px) {
 	.container {
-		padding: 0 1.5rem;
+		padding: 0 1.25rem;
 	}
 
 	.hero {
