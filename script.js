@@ -99,6 +99,23 @@ const initiate = () => {
 		}
 	);
 
+	const aboutInfo = gsap.utils.toArray(".about-section__right");
+
+	gsap.fromTo(
+		aboutInfo,
+		{ opacity: 0, x: 50 },
+		{
+			opacity: 1,
+			x: 0,
+			duration: 1,
+			ease: "power1.out",
+			scrollTrigger: {
+				trigger: aboutInfo,
+				start: "top 80%",
+			},
+		}
+	);
+
 	// Animate Contact Section
 	const contactTitle = document.querySelector(".contact-section__title");
 	const contactLinks = gsap.utils.toArray(".contact-link__link");

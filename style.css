@@ -80,7 +80,8 @@ h2 {
 
 .hero__content {
 	text-align: center;
-	width: 500px;
+	max-width: 500px;
+	width: 100%;
 	margin-top: 2rem;
 	flex: 1;
 	display: flex;
@@ -181,7 +182,7 @@ h2 {
 }
 
 .project:hover .project__image {
-	width: 90%;
+	width: 85%;
 }
 
 /* .project:hover .project__image-wrapper::after {
@@ -203,10 +204,10 @@ h2 {
 }
 
 .project__image {
-	width: 85%;
+	width: 80%;
 	aspect-ratio: 16 / 9;
 	border-radius: 0px;
-	transition: 0.2s width ease-in-out;
+	transition: 0.2s width ease-in;
 }
 
 .project__title {
@@ -251,6 +252,7 @@ h2 {
 	flex-direction: column;
 	gap: 2rem;
 	flex: 1;
+	color: #695e5e;
 }
 
 .about-section__info {
@@ -303,6 +305,11 @@ h2 {
 	color: var(--colour-1);
 	/* padding-top: 15rem; */
 	position: relative;
+	overflow: hidden;
+}
+
+.contact-section__content {
+	z-index: 1;
 }
 
 .contact-section__title {
@@ -313,6 +320,7 @@ h2 {
 	display: flex;
 	gap: 0.75rem;
 	margin-top: 2rem;
+	flex-wrap: wrap;
 }
 
 .contact-link {
@@ -322,11 +330,18 @@ h2 {
 .contact-link__link {
 	display: flex;
 	align-items: center;
+
 	gap: 0.75rem;
 	font-size: 18px;
 	border: 1px solid var(--colour-1);
 	border-radius: 50px;
 	padding: 0.75rem 1rem;
+	transition: 0.2s ease all;
+}
+
+.contact-link__link:hover {
+	background-color: var(--colour-1);
+	color: var(--colour-3);
 }
 
 .contact-link__link i {
@@ -345,8 +360,10 @@ h2 {
 } */
 
 .contact-section__image {
-	width: 375px;
+	width: 400px;
 	opacity: 0.3;
+	position: absolute;
+	right: -50px;
 }
 
 .contact-section__wrapper {
@@ -357,4 +374,88 @@ h2 {
 
 .section {
 	display: none;
+}
+
+/* Tablets */
+/* Larger Tablets / Small Desktops */
+@media (max-width: 1024px) {
+	.project {
+		width: calc((100% - 2rem) / 2);
+	}
+	.about-section__wrapper {
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.about__content {
+		width: 100%;
+	}
+	.about-section__right {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.about-section__info {
+		text-align: left;
+		width: calc(50% - 2rem);
+	}
+
+	.contact-section__title {
+		font-size: 72px;
+	}
+	.contact-section {
+		padding: 4rem 0;
+	}
+	.contact-section__image {
+		width: 350px;
+	}
+}
+
+@media (max-width: 768px) {
+	.about-section {
+		padding: 6rem 0;
+	}
+	.about__content p {
+		font-size: 16px;
+	}
+	.about-section__info {
+		width: 100%;
+	}
+	.contact-section__title {
+		font-size: 56px;
+	}
+	.contact-link__link {
+		font-size: 16px;
+	}
+	.contact-link__link i {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		padding: 0 1rem;
+	}
+	.project {
+		width: calc((100%));
+	}
+	.about-section__info {
+		width: 100%;
+	}
+	.contact-section__title {
+		font-size: 48px;
+	}
+
+	.contact-links {
+		gap: 0.5rem;
+	}
+
+	.contact-link__link {
+		font-size: 14px;
+		gap: 0.5rem;
+	}
+
+	.contact-link__link i {
+		font-size: 16px;
+	}
 }
