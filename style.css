@@ -11,9 +11,9 @@
 	--colour-2: #a04747;
 	--colour-3: #3b3030;
 }
-
+/* FCF9F5 */
 body {
-	background-color: #fcf9f5;
+	background-color: #fffcfa;
 	color: var(--colour-3);
 	overflow-x: hidden;
 	overflow-y: scroll;
