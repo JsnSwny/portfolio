@@ -1,4 +1,4 @@
-const devMode = false;
+const devMode = true;
 
 const dragPiece = document.getElementById("drag-piece");
 const emptySlot = document.getElementById("empty-slot");
