@@ -74,12 +74,16 @@ h2 {
 	height: 240px;
 }
 
+.puzzle__complete {
+	width: 100%;
+}
+
 .puzzle__empty {
 	position: absolute;
 	top: 0;
 	right: 0;
 	height: 120px;
-	filter: grayscale(100%);
+	/* filter: grayscale(100%); */
 }
 
 .hero__content {
@@ -110,7 +114,7 @@ h2 {
 }
 
 .hero__image {
-	filter: grayscale(100%);
+	/* filter: grayscale(100%); */
 	height: 120px;
 	margin: 3rem 0;
 	width: 162px;

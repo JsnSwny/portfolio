@@ -3,6 +3,7 @@ const devMode = false;
 const dragPiece = document.getElementById("drag-piece");
 const emptySlot = document.getElementById("empty-slot");
 const sections = document.querySelectorAll(".section");
+const puzzle = document.getElementById("puzzle-img");
 const hero = document.getElementById("hero");
 const projectsSection = document.getElementById("projects-section");
 
@@ -44,8 +45,9 @@ const initiate = () => {
 	const draggedElement = document.getElementById("drag-piece");
 	emptySlot.appendChild(draggedElement);
 	emptySlot.classList.remove("highlight");
+	emptySlot.style.display = "none";
 
-	emptySlot.src = "assets/images/puzzle-of-me.png";
+	puzzle.src = "assets/images/puzzle-full.png";
 
 	sections.forEach((section) => (section.style.display = "block"));
 	hero.classList.add("active");
