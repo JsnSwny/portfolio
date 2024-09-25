@@ -245,6 +245,7 @@ h2 {
 	display: flex;
 	justify-content: space-between;
 	gap: 8rem;
+	margin-top: 3rem;
 }
 
 .about-section__right {
@@ -269,23 +270,6 @@ h2 {
 	letter-spacing: 1px;
 	font-size: 12px;
 	margin-bottom: 0.5rem;
-}
-
-/* .section__about-circle {
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	background-color: #fff6f9;
-	position: absolute;
-	top: -30px;
-	left: 50%;
-	transform: translateX(-50%);
-} */
-
-.about {
-	display: flex;
-	flex-direction: column;
-	gap: 3rem;
 }
 
 .about__content {
@@ -430,15 +414,45 @@ h2 {
 	.contact-link__link i {
 		font-size: 18px;
 	}
+	.projects {
+		margin-top: 2rem;
+	}
+
+	.about-section__wrapper {
+		margin-top: 2rem;
+	}
 }
 
 @media (max-width: 480px) {
 	.container {
 		padding: 0 1rem;
 	}
+
+	.hero {
+		padding: 2rem 0;
+	}
+
+	.hero__title {
+		font-size: 24px;
+	}
+
+	.hero__subtitle {
+		font-size: 18px;
+	}
+
+	.nav {
+		height: auto;
+		padding: 1rem 0;
+	}
+
+	.nav__logo {
+		width: 24px;
+	}
+
 	.project {
 		width: calc((100%));
 	}
+
 	.about-section__info {
 		width: 100%;
 	}
