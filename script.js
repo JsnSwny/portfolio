@@ -1,4 +1,4 @@
-const devMode = true;
+const devMode = false;
 
 const dragPiece = document.getElementById("drag-piece");
 const emptySlot = document.getElementById("empty-slot");
@@ -6,23 +6,39 @@ const sections = document.querySelectorAll(".section");
 const hero = document.getElementById("hero");
 const projectsSection = document.getElementById("projects-section");
 
-dragPiece.addEventListener("dragstart", (e) => {
-	console.log("Drag started");
-	e.dataTransfer.setData("text", e.target.id);
-});
+const bottomText = document.querySelector(".hero__bottom-text");
 
-emptySlot.addEventListener("dragover", (e) => {
-	e.preventDefault();
-	emptySlot.classList.add("highlight");
-});
+const isMobile = () => {
+	return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
+		navigator.userAgent
+	);
+};
 
-emptySlot.addEventListener("dragleave", () => {
-	emptySlot.classList.remove("highlight");
-});
+const initDragDrop = () => {
+	dragPiece.addEventListener("dragstart", (e) => {
+		console.log("Drag started");
+		e.dataTransfer.setData("text", e.target.id);
+	});
 
-emptySlot.addEventListener("drop", (e) => {
-	initiate();
-});
+	emptySlot.addEventListener("dragover", (e) => {
+		e.preventDefault();
+		emptySlot.classList.add("highlight");
+	});
+
+	emptySlot.addEventListener("dragleave", () => {
+		emptySlot.classList.remove("highlight");
+	});
+
+	emptySlot.addEventListener("drop", (e) => {
+		initiate();
+	});
+};
+
+const initClick = () => {
+	dragPiece.addEventListener("click", () => {
+		initiate();
+	});
+};
 
 const initiate = () => {
 	const draggedElement = document.getElementById("drag-piece");
@@ -174,6 +190,16 @@ document.addEventListener("DOMContentLoaded", () => {
 	if (devMode) {
 		initiate();
 	}
+
+	// Check if user is on mobile or desktop
+	if (isMobile()) {
+		initClick();
+		bottomText.textContent = "Click missing piece to complete puzzle";
+	} else {
+		initDragDrop();
+		bottomText.textContent = "Drag missing piece to complete puzzle";
+	}
+
 	// Hero Section Animation
 	gsap.fromTo(
 		".puzzle",
