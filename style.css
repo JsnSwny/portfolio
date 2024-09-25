@@ -26,7 +26,7 @@ a {
 
 h1,
 h2 {
-	font-family: "Boska";
+	font-family: "Boska-Bold";
 }
 
 .container {
@@ -93,6 +93,7 @@ h2 {
 	font-size: 32px;
 	font-weight: 900;
 	opacity: 0;
+	font-family: "Boska-Black";
 }
 
 .hero__subtitle {
@@ -100,6 +101,7 @@ h2 {
 	font-weight: 400;
 	margin-top: 1rem;
 	opacity: 0;
+	font-family: "Boska-Regular";
 }
 
 .hero__image {
