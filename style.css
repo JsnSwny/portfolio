@@ -99,6 +99,7 @@ h2 {
 .hero__subtitle {
 	font-size: 24px;
 	font-weight: 400;
+	line-height: 150%;
 	margin-top: 1rem;
 	opacity: 0;
 	font-family: "Boska-Regular";
@@ -427,7 +428,7 @@ h2 {
 
 @media (max-width: 480px) {
 	.container {
-		padding: 0 1rem;
+		padding: 0 1.5rem;
 	}
 
 	.hero {
@@ -435,11 +436,11 @@ h2 {
 	}
 
 	.hero__title {
-		font-size: 24px;
+		font-size: 32px;
 	}
 
 	.hero__subtitle {
-		font-size: 18px;
+		font-size: 24px;
 	}
 
 	.nav {
