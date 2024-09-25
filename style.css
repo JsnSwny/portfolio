@@ -283,6 +283,10 @@ h2 {
 	color: #695e5e;
 }
 
+.about__content p:last-child {
+	margin-bottom: 0;
+}
+
 .contact-section {
 	background-color: var(--colour-3);
 	padding: 6rem 0;
@@ -368,7 +372,7 @@ h2 {
 	}
 	.about-section__wrapper {
 		flex-direction: column;
-		gap: 2rem;
+		gap: 3rem;
 	}
 	.about__content {
 		width: 100%;
@@ -415,10 +419,6 @@ h2 {
 		font-size: 18px;
 	}
 	.projects {
-		margin-top: 2rem;
-	}
-
-	.about-section__wrapper {
 		margin-top: 2rem;
 	}
 }
